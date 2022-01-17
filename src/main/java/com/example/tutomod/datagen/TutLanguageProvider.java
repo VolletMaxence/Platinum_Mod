@@ -18,9 +18,18 @@ public class TutLanguageProvider extends LanguageProvider {
         add("itemGroup." + TAB_NAME , "Tutorial");
 
         add(Registration.PLATINUM_ORE.get(), "Platinum Ore");
-        add(Registration.PLATINUM_ORE_DEEPSLATE.get(), "Platinum Ore");
+        add(Registration.PLATINUM_ORE_DEEPSLATE.get(), "Deepslate Platinum Ore");
+        add(Registration.PLATINUM_BLOCK.get(), "Platinum Block");
 
         add(Registration.RAW_PLATINUM.get(), "Raw Platinum");
         add(Registration.PLATINUM_INGOT.get(), "Platinum Ingot");
+        add(Registration.PLATINUM_NUGGET.get(), "Platinum Nugget");
+
+        add(Registration.PLATINUM_SWORD.get(), "Platinum Sword");
+        add(Registration.PLATINUM_PICKAXE.get(), "Platinum Pickaxe");
+        add(Registration.PLATINUM_SHOVEL.get(), "Platinum Shovel");
+        add(Registration.PLATINUM_AXE.get(), "Platinum Axe");
+        add(Registration.PLATINUM_HOE.get(), "Platinum Hoe");
+
     }
 }

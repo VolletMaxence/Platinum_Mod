@@ -14,14 +14,37 @@ public class TutItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        //Block Texture
         withExistingParent(Registration.PLATINUM_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore"));
         withExistingParent(Registration.PLATINUM_ORE_DEEPSLATE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore_deepslate"));
+        withExistingParent(Registration.PLATINUM_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_block"));
 
+        //Item Texture
         singleTexture(Registration.RAW_PLATINUM.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
         "layer0", modLoc("item/raw_platinum"));
         singleTexture(Registration.PLATINUM_INGOT.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/platinum_ingot"));
+        singleTexture(Registration.PLATINUM_NUGGET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinum_nugget"));
+
+        //Tools Texture
+        singleTexture(Registration.PLATINUM_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/handheld"),
+                "layer0", modLoc("item/platinum_sword"));
+        singleTexture(Registration.PLATINUM_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/handheld"),
+                "layer0", modLoc("item/platinum_pickaxe"));
+        singleTexture(Registration.PLATINUM_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/handheld"),
+                "layer0", modLoc("item/platinum_shovel"));
+        singleTexture(Registration.PLATINUM_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/handheld"),
+                "layer0", modLoc("item/platinum_axe"));
+        singleTexture(Registration.PLATINUM_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/handheld"),
+                "layer0", modLoc("item/platinum_hoe"));
     }
 }

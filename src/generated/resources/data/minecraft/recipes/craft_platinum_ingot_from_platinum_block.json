@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tutomod",
+  "ingredients": [
+    {
+      "item": "tutomod:platinum_block"
+    }
+  ],
+  "result": {
+    "item": "tutomod:platinum_ingot",
+    "count": 9
+  }
+}

@@ -18,6 +18,7 @@ public class TutBlockStates extends BlockStateProvider {
 
         simpleBlock(Registration.PLATINUM_ORE.get());
         simpleBlock(Registration.PLATINUM_ORE_DEEPSLATE.get());
+        simpleBlock(Registration.PLATINUM_BLOCK.get());
 
     }
 }

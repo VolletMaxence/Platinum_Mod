@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:platinum_ingot2"
+      "minecraft:craft_platinum_shovel"
     ]
   },
   "criteria": {
-    "has_chunk": {
+    "platinum": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "tutomod:raw_platinum"
+              "tutomod:platinum_ingot"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:platinum_ingot2"
+        "recipe": "minecraft:craft_platinum_shovel"
       }
     }
   },
   "requirements": [
     [
-      "has_chunk",
+      "platinum",
       "has_the_recipe"
     ]
   ]

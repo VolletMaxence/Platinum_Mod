@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tutomod",
+  "pattern": [
+    " P ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "P": {
+      "item": "tutomod:platinum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tutomod:platinum_shovel"
+  }
+}

@@ -18,17 +18,22 @@ public class TutBlockTags extends BlockTagsProvider {
     protected void addTags() {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Registration.PLATINUM_ORE.get())
-                .add(Registration.PLATINUM_ORE_DEEPSLATE.get());
+                .add(Registration.PLATINUM_ORE_DEEPSLATE.get())
+                .add(Registration.PLATINUM_BLOCK.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(Registration.PLATINUM_ORE.get())
-                .add(Registration.PLATINUM_ORE_DEEPSLATE.get());
+                .add(Registration.PLATINUM_ORE_DEEPSLATE.get())
+                .add(Registration.PLATINUM_BLOCK.get());
         tag(Tags.Blocks.ORES)
                 .add(Registration.PLATINUM_ORE.get())
                 .add(Registration.PLATINUM_ORE_DEEPSLATE.get());
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(Registration.PLATINUM_BLOCK.get());
 
         tag(Registration.PLATINUM_ORES)
                 .add(Registration.PLATINUM_ORE.get())
-                .add(Registration.PLATINUM_ORE_DEEPSLATE.get());
+                .add(Registration.PLATINUM_ORE_DEEPSLATE.get())
+                .add(Registration.PLATINUM_BLOCK.get());
     }
 
     @Override

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutomod:platinum_sword",
+    "tutomod:platinum_pickaxe",
+    "tutomod:platinum_shovel",
+    "tutomod:platinum_axe",
+    "tutomod:platinum_hoe"
+  ]
+}

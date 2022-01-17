@@ -2,16 +2,18 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:platinum_ingot1"
+      "minecraft:craft_platinum_axe"
     ]
   },
   "criteria": {
-    "has_ore": {
+    "platinum": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "tutomod:platinum_ore"
+            "items": [
+              "tutomod:platinum_ingot"
+            ]
           }
         ]
       }
@@ -19,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:platinum_ingot1"
+        "recipe": "minecraft:craft_platinum_axe"
       }
     }
   },
   "requirements": [
     [
-      "has_ore",
+      "platinum",
       "has_the_recipe"
     ]
   ]

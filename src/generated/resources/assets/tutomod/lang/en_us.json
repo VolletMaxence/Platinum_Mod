@@ -1,7 +1,14 @@
 {
+  "block.tutomod.platinum_block": "Platinum Block",
   "block.tutomod.platinum_ore": "Platinum Ore",
-  "block.tutomod.platinum_ore_deepslate": "Platinum Ore",
+  "block.tutomod.platinum_ore_deepslate": "Deepslate Platinum Ore",
+  "item.tutomod.platinum_axe": "Platinum Axe",
+  "item.tutomod.platinum_hoe": "Platinum Hoe",
   "item.tutomod.platinum_ingot": "Platinum Ingot",
+  "item.tutomod.platinum_nugget": "Platinum Nugget",
+  "item.tutomod.platinum_pickaxe": "Platinum Pickaxe",
+  "item.tutomod.platinum_shovel": "Platinum Shovel",
+  "item.tutomod.platinum_sword": "Platinum Sword",
   "item.tutomod.raw_platinum": "Raw Platinum",
   "itemGroup.tutomod": "Tutorial"
 }
