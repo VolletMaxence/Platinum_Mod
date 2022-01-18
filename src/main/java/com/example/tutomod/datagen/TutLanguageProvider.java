@@ -15,7 +15,7 @@ public class TutLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("itemGroup." + TAB_NAME , "Tutorial");
+        add("itemGroup." + TAB_NAME , "Platinum");
 
         add(Registration.PLATINUM_ORE.get(), "Platinum Ore");
         add(Registration.PLATINUM_ORE_DEEPSLATE.get(), "Deepslate Platinum Ore");
@@ -30,6 +30,11 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.PLATINUM_SHOVEL.get(), "Platinum Shovel");
         add(Registration.PLATINUM_AXE.get(), "Platinum Axe");
         add(Registration.PLATINUM_HOE.get(), "Platinum Hoe");
+
+        add(Registration.PLATINUM_HELMET.get(), "Platinum Helmet");
+        add(Registration.PLATINUM_CHESTPLATE.get(), "Platinum Chestplate");
+        add(Registration.PLATINUM_LEGGINGS.get(), "Platinum Leggings");
+        add(Registration.PLATINUM_BOOTS.get(), "Platinum Boots");
 
     }
 }

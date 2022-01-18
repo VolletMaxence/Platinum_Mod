@@ -132,5 +132,41 @@ public class TutRecipes extends RecipeProvider {
                 .group("tutomod")
                 .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
                 .save(consumer, "craft_platinum_hoe");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_HELMET.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("   ")
+                .define('P', Registration.PLATINUM_INGOT.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
+                .save(consumer, "craft_platinum_helmet");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_CHESTPLATE.get())
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .define('P', Registration.PLATINUM_INGOT.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
+                .save(consumer, "craft_platinum_chestplate");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_LEGGINGS.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .define('P', Registration.PLATINUM_INGOT.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
+                .save(consumer, "craft_platinum_leggings");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_BOOTS.get())
+                .pattern("P P")
+                .pattern("P P")
+                .pattern("   ")
+                .define('P', Registration.PLATINUM_INGOT.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
+                .save(consumer, "craft_platinum_boots");
     }
 }

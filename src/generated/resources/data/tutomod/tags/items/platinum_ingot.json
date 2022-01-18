@@ -5,6 +5,10 @@
     "tutomod:platinum_pickaxe",
     "tutomod:platinum_shovel",
     "tutomod:platinum_axe",
-    "tutomod:platinum_hoe"
+    "tutomod:platinum_hoe",
+    "tutomod:platinum_helmet",
+    "tutomod:platinum_chestplate",
+    "tutomod:platinum_leggings",
+    "tutomod:platinum_boots"
   ]
 }

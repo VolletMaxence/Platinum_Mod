@@ -40,6 +40,11 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.PLATINUM_SHOVEL.get())
                 .add(Registration.PLATINUM_AXE.get())
                 .add(Registration.PLATINUM_HOE.get());
+        tag(Registration.PLATINUM_ARMORS)
+                .add(Registration.PLATINUM_HELMET.get())
+                .add(Registration.PLATINUM_CHESTPLATE.get())
+                .add(Registration.PLATINUM_LEGGINGS.get())
+                .add(Registration.PLATINUM_BOOTS.get());
     }
 
     @Override
