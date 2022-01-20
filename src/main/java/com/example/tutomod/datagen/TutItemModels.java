@@ -60,5 +60,18 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.PLATINUM_BOOTS.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/platinum_boots"));
+
+        singleTexture(Registration.PLATINUM_INLAID_GOLD_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumgold_helmet"));
+        singleTexture(Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumgold_chestplate"));
+        singleTexture(Registration.PLATINUM_INLAID_GOLD_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumgold_leggings"));
+        singleTexture(Registration.PLATINUM_INLAID_GOLD_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumgold_boots"));
     }
 }

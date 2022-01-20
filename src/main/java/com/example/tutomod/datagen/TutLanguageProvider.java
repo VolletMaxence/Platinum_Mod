@@ -36,5 +36,10 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.PLATINUM_LEGGINGS.get(), "Platinum Leggings");
         add(Registration.PLATINUM_BOOTS.get(), "Platinum Boots");
 
+        add(Registration.PLATINUM_INLAID_GOLD_HELMET.get(), "Platinum Inlaid With Gold Helmet");
+        add(Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get(), "Platinum Inlaid With Gold Chestplate");
+        add(Registration.PLATINUM_INLAID_GOLD_LEGGINGS.get(), "Platinum Inlaid With Gold Leggings");
+        add(Registration.PLATINUM_INLAID_GOLD_BOOTS.get(), "Platinum Inlaid With Gold Boots");
+
     }
 }

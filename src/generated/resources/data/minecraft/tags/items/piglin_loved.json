@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutomod:platinum_inlaid_gold_helmet",
+    "tutomod:platinum_inlaid_gold_chestplate",
+    "tutomod:platinum_inlaid_gold_leggings",
+    "tutomod:platinum_inlaid_gold_boots"
+  ]
+}

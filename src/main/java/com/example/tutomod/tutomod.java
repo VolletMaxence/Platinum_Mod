@@ -20,6 +20,7 @@ public class tutomod {
 
     public tutomod() {
         //Register the deferred registery
+        ModSetup.setup();
         Registration.init();
 
         // Register the setup method for modloading

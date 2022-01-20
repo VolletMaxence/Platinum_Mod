@@ -28,6 +28,12 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.RAW_PLATINUM.get());
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(Registration.PLATINUM_INGOT.get());
+        tag(ItemTags.PIGLIN_LOVED)
+                .add(Registration.PLATINUM_INLAID_GOLD_HELMET.get())
+                .add(Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get())
+                .add(Registration.PLATINUM_INLAID_GOLD_LEGGINGS.get())
+                .add(Registration.PLATINUM_INLAID_GOLD_BOOTS.get());
+
 
         tag(Registration.PLATINUM_ORES_ITEM)
                 .add(Registration.PLATINUM_ORE_ITEM.get())

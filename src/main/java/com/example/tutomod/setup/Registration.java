@@ -6,6 +6,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -58,6 +59,11 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_LEGGINGS = ITEMS.register("platinum_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_BOOTS = ITEMS.register("platinum_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_HELMET = ITEMS.register("platinum_inlaid_gold_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_CHESTPLATE = ITEMS.register("platinum_inlaid_gold_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_LEGGINGS = ITEMS.register("platinum_inlaid_gold_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_BOOTS = ITEMS.register("platinum_inlaid_gold_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.FEET,  ITEM_PROPERTIES));
+
 
     //Ajout de Tag
     public static final Tags.IOptionalNamedTag<Block> PLATINUM_ORES = BlockTags.createOptional(new ResourceLocation(tutomod.MODID, "platinum_ore"));
@@ -65,6 +71,8 @@ public class Registration {
     public static final Tags.IOptionalNamedTag<Item> PLATINUM_BLOCKS_ITEM = ItemTags.createOptional(new ResourceLocation(tutomod.MODID, "platinum_block"));
     public static final Tags.IOptionalNamedTag<Item> PLATINUM_TOOLS = ItemTags.createOptional(new ResourceLocation(tutomod.MODID, "platinum_ingot"));
     public static final Tags.IOptionalNamedTag<Item> PLATINUM_ARMORS = ItemTags.createOptional(new ResourceLocation(tutomod.MODID, "platinum_ingot"));
+
+
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));

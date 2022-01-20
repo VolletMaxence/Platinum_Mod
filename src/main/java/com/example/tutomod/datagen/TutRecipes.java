@@ -2,15 +2,20 @@ package com.example.tutomod.datagen;
 
 import com.example.tutomod.setup.Registration;
 import mezz.jei.gui.CraftingGridHelper;
+import mezz.jei.plugins.vanilla.anvil.SmithingRecipeCategory;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.client.Minecraft;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.inventory.CraftingContainer;
+import net.minecraft.world.inventory.SmithingMenu;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.ShapelessRecipe;
+import net.minecraft.world.level.block.SmithingTableBlock;
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
@@ -24,7 +29,7 @@ public class TutRecipes extends RecipeProvider {
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 
-        //Smelt in furnace
+            //Smelt in furnace
             SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.PLATINUM_ORES_ITEM),
                         Registration.PLATINUM_INGOT.get(), 1.0f, 100)
                     .unlockedBy("has_ore", has(Registration.PLATINUM_ORES_ITEM))
@@ -168,5 +173,19 @@ public class TutRecipes extends RecipeProvider {
                 .group("tutomod")
                 .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
                 .save(consumer, "craft_platinum_boots");
+
+        //Smithing Table Craft
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_HELMET.get()), Ingredient.of(Items.GOLD_INGOT), Registration.PLATINUM_INLAID_GOLD_HELMET.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_HELMET.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_gold_helmet");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_CHESTPLATE.get()), Ingredient.of(Items.GOLD_INGOT), Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_CHESTPLATE.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_gold_chestplate");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_LEGGINGS.get()), Ingredient.of(Items.GOLD_INGOT), Registration.PLATINUM_INLAID_GOLD_LEGGINGS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_LEGGINGS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_gold_leggings");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_BOOTS.get()), Ingredient.of(Items.GOLD_INGOT), Registration.PLATINUM_INLAID_GOLD_BOOTS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_gold_boots");
     }
 }
