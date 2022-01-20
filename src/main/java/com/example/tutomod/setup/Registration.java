@@ -59,10 +59,10 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_LEGGINGS = ITEMS.register("platinum_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_BOOTS = ITEMS.register("platinum_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
-    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_HELMET = ITEMS.register("platinum_inlaid_gold_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_CHESTPLATE = ITEMS.register("platinum_inlaid_gold_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_LEGGINGS = ITEMS.register("platinum_inlaid_gold_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_BOOTS = ITEMS.register("platinum_inlaid_gold_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.FEET,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_HELMET = ITEMS.register("platinum_inlaid_gold_helmet", () -> new PlatinumGold(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_CHESTPLATE = ITEMS.register("platinum_inlaid_gold_chestplate", () -> new PlatinumGold(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_LEGGINGS = ITEMS.register("platinum_inlaid_gold_leggings", () -> new PlatinumGold(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_BOOTS = ITEMS.register("platinum_inlaid_gold_boots", () -> new PlatinumGold(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
 
     //Ajout de Tag
