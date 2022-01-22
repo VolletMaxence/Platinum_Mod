@@ -1,6 +1,7 @@
 package com.example.tutomod.setup;
 
 import com.example.tutomod.tutomod;
+import cpw.mods.modlauncher.api.IModuleLayerManager;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -8,7 +9,11 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ChainBlock;
+import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +28,7 @@ public class Registration {
 
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    private static final DeferredRegister<Block> LANTERN_BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
     public static void init() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -31,6 +37,8 @@ public class Registration {
     }
 
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
+    public static final BlockBehaviour.Properties BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(2f);
+    public static final BlockBehaviour.Properties DECO_PROPERTIES = BlockBehaviour.Properties.of(Material.DECORATION);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ITEM_GROUP);
 
     //Block + item
@@ -40,6 +48,12 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_ORE_DEEPSLATE_ITEM = fromBlock(PLATINUM_ORE_DEEPSLATE);
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_BLOCK_ITEM = fromBlock(PLATINUM_BLOCK);
+    public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = BLOCKS.register("raw_platinum_block", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> RAW_PLATINUM_BLOCK_ITEM = fromBlock(RAW_PLATINUM_BLOCK);
+    public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(Block.Properties.of(Material.DECORATION).noOcclusion()));
+    public static final RegistryObject<Item> PLATINUM_LANTERN_ITEM = fromBlock(PLATINUM_LANTERN);
+    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(Block.Properties.of(Material.DECORATION).noOcclusion()));
+    public static final RegistryObject<Item> PLATINUM_CHAIN_ITEM = fromBlock(PLATINUM_CHAIN);
 
     //Item
     public static final RegistryObject<Item> RAW_PLATINUM = ITEMS.register("raw_platinum", () -> new Item(ITEM_PROPERTIES));

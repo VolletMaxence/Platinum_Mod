@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tutomod",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "tutomod:raw_platinum"
+    }
+  },
+  "result": {
+    "item": "tutomod:raw_platinum_block"
+  }
+}

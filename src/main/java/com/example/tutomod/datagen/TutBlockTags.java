@@ -19,11 +19,14 @@ public class TutBlockTags extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Registration.PLATINUM_ORE.get())
                 .add(Registration.PLATINUM_ORE_DEEPSLATE.get())
+                .add(Registration.PLATINUM_BLOCK.get())
+                .add(Registration.RAW_PLATINUM_BLOCK.get());
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(Registration.RAW_PLATINUM_BLOCK.get())
                 .add(Registration.PLATINUM_BLOCK.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(Registration.PLATINUM_ORE.get())
-                .add(Registration.PLATINUM_ORE_DEEPSLATE.get())
-                .add(Registration.PLATINUM_BLOCK.get());
+                .add(Registration.PLATINUM_ORE_DEEPSLATE.get());
         tag(Tags.Blocks.ORES)
                 .add(Registration.PLATINUM_ORE.get())
                 .add(Registration.PLATINUM_ORE_DEEPSLATE.get());
@@ -33,7 +36,8 @@ public class TutBlockTags extends BlockTagsProvider {
         tag(Registration.PLATINUM_ORES)
                 .add(Registration.PLATINUM_ORE.get())
                 .add(Registration.PLATINUM_ORE_DEEPSLATE.get())
-                .add(Registration.PLATINUM_BLOCK.get());
+                .add(Registration.PLATINUM_BLOCK.get())
+                .add(Registration.RAW_PLATINUM_BLOCK.get());
     }
 
     @Override

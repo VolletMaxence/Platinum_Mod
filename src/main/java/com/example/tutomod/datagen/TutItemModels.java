@@ -18,6 +18,11 @@ public class TutItemModels extends ItemModelProvider {
         withExistingParent(Registration.PLATINUM_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore"));
         withExistingParent(Registration.PLATINUM_ORE_DEEPSLATE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore_deepslate"));
         withExistingParent(Registration.PLATINUM_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_block"));
+        withExistingParent(Registration.RAW_PLATINUM_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/raw_platinum_block"));
+        withExistingParent(Registration.PLATINUM_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore"));
+
+
+
 
         //Item Texture
         singleTexture(Registration.RAW_PLATINUM.get().getRegistryName().getPath(),
@@ -46,7 +51,12 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.PLATINUM_HOE.get().getRegistryName().getPath(),
                 mcLoc("item/handheld"),
                 "layer0", modLoc("item/platinum_hoe"));
-
+        singleTexture(Registration.PLATINUM_LANTERN.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinum_lantern"));
+        singleTexture(Registration.PLATINUM_CHAIN.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinum_chain"));
         //Armor Texture
         singleTexture(Registration.PLATINUM_HELMET.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),

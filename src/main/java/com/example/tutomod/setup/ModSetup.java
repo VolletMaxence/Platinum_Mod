@@ -30,12 +30,5 @@ public class ModSetup {
         });
 
 
-/*
-        public static void makesPiglinsNeutral(ItemStack stack, LivingEntity wearer)
-        {
-            @Override
-            return stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getMaterial() == ArmorMaterials.GOLD;
-        }
- */
     }
 }

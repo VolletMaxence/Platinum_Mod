@@ -20,6 +20,9 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.PLATINUM_ORE.get(), "Platinum Ore");
         add(Registration.PLATINUM_ORE_DEEPSLATE.get(), "Deepslate Platinum Ore");
         add(Registration.PLATINUM_BLOCK.get(), "Platinum Block");
+        add(Registration.RAW_PLATINUM_BLOCK.get(), "Block of Raw Platinum");
+        add(Registration.PLATINUM_LANTERN.get(), "Platinum Lantern");
+        add(Registration.PLATINUM_CHAIN.get(), "Platinum Chain");
 
         add(Registration.RAW_PLATINUM.get(), "Raw Platinum");
         add(Registration.PLATINUM_INGOT.get(), "Platinum Ingot");
@@ -40,6 +43,5 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get(), "Platinum Inlaid With Gold Chestplate");
         add(Registration.PLATINUM_INLAID_GOLD_LEGGINGS.get(), "Platinum Inlaid With Gold Leggings");
         add(Registration.PLATINUM_INLAID_GOLD_BOOTS.get(), "Platinum Inlaid With Gold Boots");
-
     }
 }

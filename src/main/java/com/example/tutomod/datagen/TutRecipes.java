@@ -187,5 +187,41 @@ public class TutRecipes extends RecipeProvider {
         UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_BOOTS.get()), Ingredient.of(Items.GOLD_INGOT), Registration.PLATINUM_INLAID_GOLD_BOOTS.get())
                 .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
                 .save(consumer, "smithing_platinum_inlaid_with_gold_boots");
+
+        ShapedRecipeBuilder.shaped(Registration.RAW_PLATINUM_BLOCK.get())
+                .pattern("RRR")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', Registration.RAW_PLATINUM.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.RAW_PLATINUM.get()))
+                .save(consumer, "craft_raw_platinum_block_from_raw_platinum");
+
+        //Platinum Ingot Craft from Platinum Block
+        ShapelessRecipeBuilder.shapeless(Registration.RAW_PLATINUM.get(), 9)
+                .requires(Registration.RAW_PLATINUM_BLOCK.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.RAW_PLATINUM_BLOCK.get()))
+                .save(consumer, "craft_raw_platinum_from_raw_platinum_block");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_LANTERN.get())
+                .pattern("ppp")
+                .pattern("pTp")
+                .pattern("ppp")
+                .define('p', Registration.PLATINUM_NUGGET.get())
+                .define('T', Items.TORCH)
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Items.TORCH))
+                .save(consumer, "craft_platinum_lantern");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_CHAIN.get())
+                .pattern(" p ")
+                .pattern(" P ")
+                .pattern(" p ")
+                .define('p', Registration.PLATINUM_NUGGET.get())
+                .define('P', Registration.PLATINUM_INGOT.get())
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_NUGGET.get()))
+                .save(consumer, "craft_platinum_chain");
     }
 }

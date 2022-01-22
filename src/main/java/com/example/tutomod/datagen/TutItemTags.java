@@ -28,6 +28,7 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.RAW_PLATINUM.get());
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(Registration.PLATINUM_INGOT.get());
+
         tag(ItemTags.PIGLIN_LOVED)
                 .add(Registration.PLATINUM_INLAID_GOLD_HELMET.get())
                 .add(Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get())
@@ -39,7 +40,8 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.PLATINUM_ORE_ITEM.get())
                 .add(Registration.PLATINUM_ORE_DEEPSLATE_ITEM.get())
                 .add(Registration.PLATINUM_BLOCK_ITEM.get())
-                .add(Registration.PLATINUM_NUGGET.get());
+                .add(Registration.PLATINUM_NUGGET.get())
+                .add(Registration.RAW_PLATINUM_BLOCK_ITEM.get());
         tag(Registration.PLATINUM_TOOLS)
                 .add(Registration.PLATINUM_SWORD.get())
                 .add(Registration.PLATINUM_PICKAXE.get())

@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "platinum_block",
+      "name": "platinum_lantern",
       "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "tutomod:platinum_block"
+              "name": "tutomod:platinum_lantern"
             },
             {
               "type": "minecraft:item",
@@ -52,7 +52,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "tutomod:platinum_block"
+              "name": "tutomod:platinum_lantern"
             }
           ]
         }
