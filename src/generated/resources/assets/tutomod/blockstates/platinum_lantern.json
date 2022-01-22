@@ -4,7 +4,7 @@
       "model": "tutomod:block/platinum_lantern"
     },
     "hanging=true": {
-      "model": "tutomod:block/platinum_lantern"
+      "model": "tutomod:block/platinum_lantern_hanging"
     }
   }
 }
