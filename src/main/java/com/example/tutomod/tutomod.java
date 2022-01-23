@@ -32,7 +32,14 @@ public class tutomod {
         // Register the setup method for modloading
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(ModSetup::init);
+        modbus.addListener(this::setupClient);
 
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> modbus.addListener(ClientSetup::init));
+    }
+
+    private void  setupClient(final FMLClientSetupEvent event)
+    {
+        ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_CHAIN.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_LANTERN.get(), RenderType.cutout());
     }
 }

@@ -55,9 +55,11 @@ public class Registration {
     public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = BLOCKS.register("raw_platinum_block", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> RAW_PLATINUM_BLOCK_ITEM = fromBlock(RAW_PLATINUM_BLOCK);
     public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(Block.Properties.of(Material.DECORATION)
-            .lightLevel(lightLevel)));
+            .lightLevel(lightLevel)
+            .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_LANTERN_ITEM = fromBlock(PLATINUM_LANTERN);
-    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(Block.Properties.of(Material.DECORATION).noOcclusion()));
+    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(Block.Properties.of(Material.DECORATION)
+            .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_CHAIN_ITEM = fromBlock(PLATINUM_CHAIN);
 
     //Item

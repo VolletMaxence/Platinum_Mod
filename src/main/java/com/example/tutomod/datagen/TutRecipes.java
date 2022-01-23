@@ -36,18 +36,18 @@ public class TutRecipes extends RecipeProvider {
                     .save(consumer, "smelting_ore_platinum_ingot");
 
             SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.RAW_PLATINUM.get()),
-                        Registration.PLATINUM_INGOT.get(), 0.0f, 100)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 100)
                 .unlockedBy("has_chunk", has(Registration.RAW_PLATINUM.get()))
                 .save(consumer, "smelting_raw_platinum_ingot");
 
         //Smelt in Blast_Furnace
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(Registration.PLATINUM_ORES_ITEM),
-                        Registration.PLATINUM_INGOT.get(), 1.0f, 100)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 50)
                 .unlockedBy("has_ore", has(Registration.PLATINUM_ORES_ITEM))
                 .save(consumer, "blasting_ore_platinum_ingot");
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(Registration.RAW_PLATINUM.get()),
-                        Registration.PLATINUM_INGOT.get(), 0.0f, 100)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 50)
                 .unlockedBy("has_chunk", has(Registration.RAW_PLATINUM.get()))
                 .save(consumer, "blasting_raw_platinum_ingot");
 
