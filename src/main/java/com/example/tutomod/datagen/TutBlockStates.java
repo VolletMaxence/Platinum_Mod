@@ -39,7 +39,7 @@ public class TutBlockStates extends BlockStateProvider {
         simpleBlock(Registration.PLATINUM_BLOCK.get());
         simpleBlock(Registration.RAW_PLATINUM_BLOCK.get());
         ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_LANTERN.get(), RenderType.cutout());
-        //ModelTemplates.LANTERN(Registration.PLATINUM_LANTERN.get());
+        ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_SOUL_LANTERN.get(), RenderType.cutout());
 
     }
 

@@ -41,5 +41,6 @@ public class tutomod {
     {
         ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_CHAIN.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_LANTERN.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(Registration.PLATINUM_SOUL_LANTERN.get(), RenderType.cutout());
     }
 }

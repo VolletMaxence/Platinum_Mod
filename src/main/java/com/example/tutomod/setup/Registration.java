@@ -33,6 +33,7 @@ public class Registration {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     private static final DeferredRegister<Block> LANTERN_BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static ToIntFunction<BlockState> lightLevel = BlockState -> 15;
+    public static ToIntFunction<BlockState> lightLevelSoul = BlockState -> 10;
 
     public static void init() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -61,6 +62,10 @@ public class Registration {
     public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(Block.Properties.of(Material.DECORATION)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_CHAIN_ITEM = fromBlock(PLATINUM_CHAIN);
+    public static final RegistryObject<Block> PLATINUM_SOUL_LANTERN = BLOCKS.register("platinum_soul_lantern", () -> new LanternBlock(Block.Properties.of(Material.DECORATION)
+            .lightLevel(lightLevelSoul)
+            .noOcclusion()));
+    public static final RegistryObject<Item> PLATINUM_SOUL_LANTERN_ITEM = fromBlock(PLATINUM_SOUL_LANTERN);
 
     //Item
     public static final RegistryObject<Item> RAW_PLATINUM = ITEMS.register("raw_platinum", () -> new Item(ITEM_PROPERTIES));

@@ -23,6 +23,7 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.RAW_PLATINUM_BLOCK.get(), "Block of Raw Platinum");
         add(Registration.PLATINUM_LANTERN.get(), "Platinum Lantern");
         add(Registration.PLATINUM_CHAIN.get(), "Platinum Chain");
+        add(Registration.PLATINUM_SOUL_LANTERN.get(), "Platinum Soul Lantern");
 
         add(Registration.RAW_PLATINUM.get(), "Raw Platinum");
         add(Registration.PLATINUM_INGOT.get(), "Platinum Ingot");

@@ -17,6 +17,7 @@ public class TutLootTables extends BaseLootTableProvider {
         lootTables.put(Registration.RAW_PLATINUM_BLOCK.get(), createSilkTouchTable("raw_platinum_block", Registration.RAW_PLATINUM_BLOCK.get(), Registration.RAW_PLATINUM_BLOCK_ITEM.get(), 1, 1));
         lootTables.put(Registration.PLATINUM_LANTERN.get(), createSilkTouchTable("platinum_lantern", Registration.PLATINUM_LANTERN.get(), Registration.PLATINUM_LANTERN_ITEM.get(), 1, 1));
         lootTables.put(Registration.PLATINUM_CHAIN.get(), createSilkTouchTable("platinum_lantern", Registration.PLATINUM_CHAIN.get(), Registration.PLATINUM_CHAIN_ITEM.get(), 1, 1));
+        lootTables.put(Registration.PLATINUM_SOUL_LANTERN.get(), createSilkTouchTable("platinum_soul_lantern", Registration.PLATINUM_SOUL_LANTERN.get(), Registration.PLATINUM_SOUL_LANTERN_ITEM.get(), 1, 1));
 
     }
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "tutomod:block/platinum_soul_lantern"
+    },
+    "hanging=true": {
+      "model": "tutomod:block/platinum_soul_lantern_hanging"
+    }
+  }
+}

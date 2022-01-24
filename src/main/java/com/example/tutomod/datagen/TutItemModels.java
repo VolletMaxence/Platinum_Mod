@@ -21,9 +21,6 @@ public class TutItemModels extends ItemModelProvider {
         withExistingParent(Registration.RAW_PLATINUM_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/raw_platinum_block"));
         withExistingParent(Registration.PLATINUM_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore"));
 
-
-
-
         //Item Texture
         singleTexture(Registration.RAW_PLATINUM.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
@@ -57,6 +54,10 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.PLATINUM_CHAIN.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/platinum_chain"));
+        singleTexture(Registration.PLATINUM_SOUL_LANTERN.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinum_soul_lantern"));
+
         //Armor Texture
         singleTexture(Registration.PLATINUM_HELMET.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
