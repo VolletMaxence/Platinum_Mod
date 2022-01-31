@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:smithing_platinum_inlaid_with_diamond_chestplate"
+    ]
+  },
+  "criteria": {
+    "platinum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutomod:platinum_chestplate"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:smithing_platinum_inlaid_with_diamond_chestplate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "platinum",
+      "has_the_recipe"
+    ]
+  ]
+}

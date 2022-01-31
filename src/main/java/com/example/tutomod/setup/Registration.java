@@ -1,20 +1,17 @@
 package com.example.tutomod.setup;
 
+import com.example.tutomod.item.custom.ModArmorItem;
 import com.example.tutomod.tutomod;
-import cpw.mods.modlauncher.api.IModuleLayerManager;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChainBlock;
 import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -90,6 +87,25 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_LEGGINGS = ITEMS.register("platinum_inlaid_gold_leggings", () -> new PlatinumGold(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_GOLD_BOOTS = ITEMS.register("platinum_inlaid_gold_boots", () -> new PlatinumGold(ModArmorMaterial.PLATINUMGOLD, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
+    public static final RegistryObject<Item> PLATINUM_INLAID_LAPIS_HELMET = ITEMS.register("platinum_inlaid_lapis_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMLAPIS, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_LAPIS_CHESTPLATE = ITEMS.register("platinum_inlaid_lapis_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMLAPIS, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_LAPIS_LEGGINGS = ITEMS.register("platinum_inlaid_lapis_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMLAPIS, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_LAPIS_BOOTS = ITEMS.register("platinum_inlaid_lapis_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMLAPIS, EquipmentSlot.FEET,  ITEM_PROPERTIES));
+
+    public static final RegistryObject<Item> PLATINUM_INLAID_REDSTONE_HELMET = ITEMS.register("platinum_inlaid_redstone_helmet", () -> new ModArmorItem(ModArmorMaterial.PLATINUMREDSTONE, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_REDSTONE_CHESTPLATE = ITEMS.register("platinum_inlaid_redstone_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMREDSTONE, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_REDSTONE_LEGGINGS = ITEMS.register("platinum_inlaid_redstone_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMREDSTONE, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_REDSTONE_BOOTS = ITEMS.register("platinum_inlaid_redstone_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMREDSTONE, EquipmentSlot.FEET,  ITEM_PROPERTIES));
+
+    public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_HELMET = ITEMS.register("platinum_inlaid_diamond_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_CHESTPLATE = ITEMS.register("platinum_inlaid_diamond_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_LEGGINGS = ITEMS.register("platinum_inlaid_diamond_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_BOOTS = ITEMS.register("platinum_inlaid_diamond_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.FEET,  ITEM_PROPERTIES));
+
+    public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_HELMET = ITEMS.register("platinum_inlaid_emerald_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_CHESTPLATE = ITEMS.register("platinum_inlaid_emerald_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_LEGGINGS = ITEMS.register("platinum_inlaid_emerald_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_BOOTS = ITEMS.register("platinum_inlaid_emerald_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
     //Ajout de Tag
     public static final Tags.IOptionalNamedTag<Block> PLATINUM_ORES = BlockTags.createOptional(new ResourceLocation(tutomod.MODID, "platinum_ore"));

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "tutomod:platinum_chestplate"
+  },
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "result": {
+    "item": "tutomod:platinum_inlaid_diamond_chestplate"
+  }
+}

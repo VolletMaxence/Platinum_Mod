@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "tutomod:platinum_helmet"
+  },
+  "addition": {
+    "item": "minecraft:emerald"
+  },
+  "result": {
+    "item": "tutomod:platinum_inlaid_emerald_helmet"
+  }
+}

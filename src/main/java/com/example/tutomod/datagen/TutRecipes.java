@@ -188,6 +188,60 @@ public class TutRecipes extends RecipeProvider {
                 .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
                 .save(consumer, "smithing_platinum_inlaid_with_gold_boots");
 
+
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_HELMET.get()), Ingredient.of(Items.LAPIS_LAZULI), Registration.PLATINUM_INLAID_LAPIS_HELMET.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_HELMET.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_lapis_helmet");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_CHESTPLATE.get()), Ingredient.of(Items.LAPIS_LAZULI), Registration.PLATINUM_INLAID_LAPIS_CHESTPLATE.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_CHESTPLATE.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_lapis_chestplate");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_LEGGINGS.get()), Ingredient.of(Items.LAPIS_LAZULI), Registration.PLATINUM_INLAID_LAPIS_LEGGINGS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_LEGGINGS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_lapis_leggings_boots");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_BOOTS.get()), Ingredient.of(Items.LAPIS_LAZULI), Registration.PLATINUM_INLAID_LAPIS_BOOTS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_lapis_boots");
+
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_HELMET.get()), Ingredient.of(Items.REDSTONE), Registration.PLATINUM_INLAID_REDSTONE_HELMET.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_HELMET.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_redstone_helmet");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_CHESTPLATE.get()), Ingredient.of(Items.REDSTONE), Registration.PLATINUM_INLAID_REDSTONE_CHESTPLATE.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_CHESTPLATE.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_redstone_chestplate");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_LEGGINGS.get()), Ingredient.of(Items.REDSTONE), Registration.PLATINUM_INLAID_REDSTONE_LEGGINGS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_LEGGINGS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_redstone_leggings_boots");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_BOOTS.get()), Ingredient.of(Items.REDSTONE), Registration.PLATINUM_INLAID_REDSTONE_BOOTS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_redstone_boots");
+
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_HELMET.get()), Ingredient.of(Items.DIAMOND), Registration.PLATINUM_INLAID_DIAMOND_HELMET.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_HELMET.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_diamond_helmet");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_CHESTPLATE.get()), Ingredient.of(Items.DIAMOND), Registration.PLATINUM_INLAID_DIAMOND_CHESTPLATE.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_CHESTPLATE.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_diamond_chestplate");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_LEGGINGS.get()), Ingredient.of(Items.DIAMOND), Registration.PLATINUM_INLAID_DIAMOND_LEGGINGS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_LEGGINGS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_diamond_leggings");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_BOOTS.get()), Ingredient.of(Items.DIAMOND), Registration.PLATINUM_INLAID_DIAMOND_BOOTS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_diamond_boots");
+
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_HELMET.get()), Ingredient.of(Items.EMERALD), Registration.PLATINUM_INLAID_EMERALD_HELMET.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_HELMET.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_emerald_helmet");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_CHESTPLATE.get()), Ingredient.of(Items.EMERALD), Registration.PLATINUM_INLAID_EMERALD_CHESTPLATE.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_CHESTPLATE.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_emerald_chestplate");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_LEGGINGS.get()), Ingredient.of(Items.EMERALD), Registration.PLATINUM_INLAID_EMERALD_LEGGINGS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_LEGGINGS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_emerald_leggings");
+        UpgradeRecipeBuilder.smithing(Ingredient.of(Registration.PLATINUM_BOOTS.get()), Ingredient.of(Items.EMERALD), Registration.PLATINUM_INLAID_EMERALD_BOOTS.get())
+                .unlocks("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BOOTS.get()))
+                .save(consumer, "smithing_platinum_inlaid_with_emerald_boots");
+
+
         ShapedRecipeBuilder.shaped(Registration.RAW_PLATINUM_BLOCK.get())
                 .pattern("RRR")
                 .pattern("RRR")

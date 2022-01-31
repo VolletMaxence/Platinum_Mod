@@ -84,5 +84,44 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.PLATINUM_INLAID_GOLD_BOOTS.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/platinumgold_boots"));
+
+        singleTexture(Registration.PLATINUM_INLAID_LAPIS_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumlapis_helmet"));
+        singleTexture(Registration.PLATINUM_INLAID_LAPIS_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumlapis_chestplate"));
+        singleTexture(Registration.PLATINUM_INLAID_LAPIS_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumlapis_leggings"));
+        singleTexture(Registration.PLATINUM_INLAID_LAPIS_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumlapis_boots"));
+
+        singleTexture(Registration.PLATINUM_INLAID_DIAMOND_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumdiamond_helmet"));
+        singleTexture(Registration.PLATINUM_INLAID_DIAMOND_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumdiamond_chestplate"));
+        singleTexture(Registration.PLATINUM_INLAID_DIAMOND_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumdiamond_leggings"));
+        singleTexture(Registration.PLATINUM_INLAID_DIAMOND_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumdiamond_boots"));
+
+        singleTexture(Registration.PLATINUM_INLAID_EMERALD_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumemerald_helmet"));
+        singleTexture(Registration.PLATINUM_INLAID_EMERALD_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumemerald_chestplate"));
+        singleTexture(Registration.PLATINUM_INLAID_EMERALD_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumemerald_leggings"));
+        singleTexture(Registration.PLATINUM_INLAID_EMERALD_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/platinumemerald_boots"));
     }
 }

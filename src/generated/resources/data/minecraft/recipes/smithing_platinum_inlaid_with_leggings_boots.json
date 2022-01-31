@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "tutomod:platinum_leggings"
+  },
+  "addition": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "result": {
+    "item": "tutomod:platinum_inlaid_lapis_leggings"
+  }
+}

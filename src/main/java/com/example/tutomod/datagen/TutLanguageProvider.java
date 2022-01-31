@@ -44,5 +44,25 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.PLATINUM_INLAID_GOLD_CHESTPLATE.get(), "Platinum Inlaid With Gold Chestplate");
         add(Registration.PLATINUM_INLAID_GOLD_LEGGINGS.get(), "Platinum Inlaid With Gold Leggings");
         add(Registration.PLATINUM_INLAID_GOLD_BOOTS.get(), "Platinum Inlaid With Gold Boots");
+
+        add(Registration.PLATINUM_INLAID_LAPIS_HELMET.get(), "Platinum Inlaid With Lapis Helmet");
+        add(Registration.PLATINUM_INLAID_LAPIS_CHESTPLATE.get(), "Platinum Inlaid With Lapis Chestplate");
+        add(Registration.PLATINUM_INLAID_LAPIS_LEGGINGS.get(), "Platinum Inlaid With Lapis Leggings");
+        add(Registration.PLATINUM_INLAID_LAPIS_BOOTS.get(), "Platinum Inlaid With Lapis Boots");
+
+        add(Registration.PLATINUM_INLAID_REDSTONE_HELMET.get(), "Platinum Inlaid With Redstone Helmet");
+        add(Registration.PLATINUM_INLAID_REDSTONE_CHESTPLATE.get(), "Platinum Inlaid With Redstone Chestplate");
+        add(Registration.PLATINUM_INLAID_REDSTONE_LEGGINGS.get(), "Platinum Inlaid With Redstone Leggings");
+        add(Registration.PLATINUM_INLAID_REDSTONE_BOOTS.get(), "Platinum Inlaid With Redstone Boots");
+
+        add(Registration.PLATINUM_INLAID_DIAMOND_HELMET.get(), "Platinum Inlaid With Diamond Helmet");
+        add(Registration.PLATINUM_INLAID_DIAMOND_CHESTPLATE.get(), "Platinum Inlaid With Diamond Chestplate");
+        add(Registration.PLATINUM_INLAID_DIAMOND_LEGGINGS.get(), "Platinum Inlaid With Diamond Leggings");
+        add(Registration.PLATINUM_INLAID_DIAMOND_BOOTS.get(), "Platinum Inlaid With Diamond Boots");
+
+        add(Registration.PLATINUM_INLAID_EMERALD_HELMET.get(), "Platinum Inlaid With Emerald Helmet");
+        add(Registration.PLATINUM_INLAID_EMERALD_CHESTPLATE.get(), "Platinum Inlaid With Emerald Chestplate");
+        add(Registration.PLATINUM_INLAID_EMERALD_LEGGINGS.get(), "Platinum Inlaid With Emerald Leggings");
+        add(Registration.PLATINUM_INLAID_EMERALD_BOOTS.get(), "Platinum Inlaid With Emerald Boots");
     }
 }
