@@ -29,9 +29,10 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffect> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffect>())
                     .put(PLATINUMREDSTONE, MobEffects.MOVEMENT_SPEED).build();
+    /*
                     .put(PLATINUMDIAMOND, MobEffects.DAMAGE_RESISTANCE).build();
                     .put(PLATINUMEMERALD, MobEffects.HERO_OF_THE_VILLAGE).build();
-
+    */
 
     public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
@@ -67,7 +68,7 @@ public class ModArmorItem extends ArmorItem {
         boolean hasPlayerEffect = player.hasEffect(mapStatusEffect);
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addEffect(new MobEffectInstance(, 20, 1));
+            player.addEffect(new MobEffectInstance(mapStatusEffect, 400));
 
 
             /*
@@ -78,22 +79,36 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private boolean hasFullSuitOfArmorOn(LivingEntity player) {
-        ItemStack boots = player.getArmorSlots(0);
-        ItemStack leggings = player.getArmorSlots(1);
-        ItemStack breastplate = player.getArmorSlots(2);
-        ItemStack helmet = player.getArmorSlots(3);
+        //float ArmorLevel = player.getArmorCoverPercentage();
 
-        return !helmet.isEmpty() && !breastplate.isEmpty()
-                && !leggings.isEmpty() && !boots.isEmpty();
+        Boolean boots = player.hasItemInSlot(EquipmentSlot.FEET);
+        Boolean leggings = player.hasItemInSlot(EquipmentSlot.LEGS);
+        Boolean breastplate = player.hasItemInSlot(EquipmentSlot.CHEST);
+        Boolean helmet = player.hasItemInSlot(EquipmentSlot.HEAD);
+
+        if (boots == true || leggings == true || breastplate == true || helmet == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, LivingEntity player) {
-        ArmorItem boots = ((ArmorItem)player.inventory.ArmorStack(0).getItem());
+        ItemStack boots = player.getItemBySlot(EquipmentSlot.FEET);
+        ItemStack leggings = player.getItemBySlot(EquipmentSlot.FEET);
+        ItemStack chestplate = player.getItemBySlot(EquipmentSlot.FEET);
+        ItemStack boots = player.getItemBySlot(EquipmentSlot.FEET);
+
+
+        /*
         ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
-
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
+        */
+        return helmet.getMaterial() == material && chestplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
 }
