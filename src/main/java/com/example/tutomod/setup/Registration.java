@@ -57,6 +57,7 @@ public class Registration {
     public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = BLOCKS.register("raw_platinum_block", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> RAW_PLATINUM_BLOCK_ITEM = fromBlock(RAW_PLATINUM_BLOCK);
 
+    //Block chiant
     public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
             .lightLevel(lightLevel)
             .noOcclusion()));
@@ -75,11 +76,11 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget", () -> new Item(ITEM_PROPERTIES));
 
     //Tools
-    public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword", () -> new SwordItem(ModTiers.PLATINUM, 2, 1.5f, ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe", () -> new PickaxeItem(ModTiers.PLATINUM, 2, 1.5f, ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel", () -> new ShovelItem(ModTiers.PLATINUM, 2, 1.5f, ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe", () -> new AxeItem(ModTiers.PLATINUM, 2, 1.5f, ITEM_PROPERTIES));
-    public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe", () -> new HoeItem(ModTiers.PLATINUM, 2, 1.5f, ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword", () -> new SwordItem(ModTiers.PLATINUM, 5, -2.4f, ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe", () -> new PickaxeItem(ModTiers.PLATINUM, 3, -2.8f, ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel", () -> new ShovelItem(ModTiers.PLATINUM, 3.5f, -3, ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe", () -> new AxeItem(ModTiers.PLATINUM, 8, -3.1f, ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe", () -> new HoeItem(ModTiers.PLATINUM, 0, -2.7f, ITEM_PROPERTIES));
 
     //Armor
     public static final RegistryObject<Item> PLATINUM_HELMET = ITEMS.register("platinum_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUM, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
