@@ -10,9 +10,11 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ChainBlock;
 import net.minecraft.world.level.block.LanternBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -28,7 +30,6 @@ public class Registration {
 
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    private static final DeferredRegister<Block> LANTERN_BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static ToIntFunction<BlockState> lightLevel = BlockState -> 15;
     public static ToIntFunction<BlockState> lightLevelSoul = BlockState -> 10;
 
@@ -39,8 +40,11 @@ public class Registration {
     }
 
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
-    public static final BlockBehaviour.Properties BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(2f);
+    public static final BlockBehaviour.Properties LANTERN_PROPERTIES = Block.Properties.of(Material.METAL).strength(2f).sound(SoundType.LANTERN).lightLevel(lightLevel).noOcclusion();
+    public static final BlockBehaviour.Properties SOUL_LANTERN_PROPERTIES = Block.Properties.of(Material.METAL).strength(2f).sound(SoundType.LANTERN).lightLevel(lightLevelSoul).noOcclusion();
+    public static final BlockBehaviour.Properties CHAIN_PROPERTIES = Block.Properties.of(Material.METAL).strength(5.0F, 6.0F).sound(SoundType.CHAIN).noOcclusion();
     public static final BlockBehaviour.Properties DECO_PROPERTIES = BlockBehaviour.Properties.of(Material.DECORATION);
+
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ITEM_GROUP);
 
     //Block + item
@@ -52,14 +56,15 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_BLOCK_ITEM = fromBlock(PLATINUM_BLOCK);
     public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = BLOCKS.register("raw_platinum_block", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> RAW_PLATINUM_BLOCK_ITEM = fromBlock(RAW_PLATINUM_BLOCK);
-    public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(Block.Properties.of(Material.DECORATION)
+
+    public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
             .lightLevel(lightLevel)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_LANTERN_ITEM = fromBlock(PLATINUM_LANTERN);
-    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(Block.Properties.of(Material.DECORATION)
+    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_CHAIN_ITEM = fromBlock(PLATINUM_CHAIN);
-    public static final RegistryObject<Block> PLATINUM_SOUL_LANTERN = BLOCKS.register("platinum_soul_lantern", () -> new LanternBlock(Block.Properties.of(Material.DECORATION)
+    public static final RegistryObject<Block> PLATINUM_SOUL_LANTERN = BLOCKS.register("platinum_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
             .lightLevel(lightLevelSoul)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_SOUL_LANTERN_ITEM = fromBlock(PLATINUM_SOUL_LANTERN);
@@ -97,12 +102,12 @@ public class Registration {
     public static final RegistryObject<Item> PLATINUM_INLAID_REDSTONE_LEGGINGS = ITEMS.register("platinum_inlaid_redstone_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMREDSTONE, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_REDSTONE_BOOTS = ITEMS.register("platinum_inlaid_redstone_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMREDSTONE, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
-    public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_HELMET = ITEMS.register("platinum_inlaid_diamond_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_HELMET = ITEMS.register("platinum_inlaid_diamond_helmet", () -> new ModArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_CHESTPLATE = ITEMS.register("platinum_inlaid_diamond_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_LEGGINGS = ITEMS.register("platinum_inlaid_diamond_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_DIAMOND_BOOTS = ITEMS.register("platinum_inlaid_diamond_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMDIAMOND, EquipmentSlot.FEET,  ITEM_PROPERTIES));
 
-    public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_HELMET = ITEMS.register("platinum_inlaid_emerald_helmet", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
+    public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_HELMET = ITEMS.register("platinum_inlaid_emerald_helmet", () -> new ModArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.HEAD,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_CHESTPLATE = ITEMS.register("platinum_inlaid_emerald_chestplate", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.CHEST,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_LEGGINGS = ITEMS.register("platinum_inlaid_emerald_leggings", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.LEGS,  ITEM_PROPERTIES));
     public static final RegistryObject<Item> PLATINUM_INLAID_EMERALD_BOOTS = ITEMS.register("platinum_inlaid_emerald_boots", () -> new ArmorItem(ModArmorMaterial.PLATINUMEMERALD, EquipmentSlot.FEET,  ITEM_PROPERTIES));

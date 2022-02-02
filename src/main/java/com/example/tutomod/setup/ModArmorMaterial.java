@@ -22,7 +22,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     PLATINUMLAPIS("platinumlapis", 20, new int[]{2, 5, 6, 2}, 25, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.of((ItemLike) Registration.PLATINUM_INGOT.get());
     }),
-    PLATINUMREDSTONE("platinumlapis", 20, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+    PLATINUMREDSTONE("platinumredstone", 20, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.of((ItemLike) Registration.PLATINUM_INGOT.get());
     }),
     PLATINUMDIAMOND("platinumdiamond", 20, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
