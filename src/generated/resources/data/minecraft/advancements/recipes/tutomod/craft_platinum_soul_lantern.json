@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:craft_platinum_ingot_from_platinum_block"
+      "minecraft:craft_platinum_soul_lantern"
     ]
   },
   "criteria": {
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "tutomod:platinum_ingot"
+              "minecraft:soul_torch"
             ]
           }
         ]
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:craft_platinum_ingot_from_platinum_block"
+        "recipe": "minecraft:craft_platinum_soul_lantern"
       }
     }
   },

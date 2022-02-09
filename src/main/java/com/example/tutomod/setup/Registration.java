@@ -58,14 +58,14 @@ public class Registration {
     public static final RegistryObject<Item> RAW_PLATINUM_BLOCK_ITEM = fromBlock(RAW_PLATINUM_BLOCK);
 
     //Block chiant
-    public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+    public static final RegistryObject<Block> PLATINUM_LANTERN = BLOCKS.register("platinum_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1.0F)
             .lightLevel(lightLevel)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_LANTERN_ITEM = fromBlock(PLATINUM_LANTERN);
-    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+    public static final RegistryObject<Block> PLATINUM_CHAIN = BLOCKS.register("platinum_chain", () -> new ChainBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1.0F)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_CHAIN_ITEM = fromBlock(PLATINUM_CHAIN);
-    public static final RegistryObject<Block> PLATINUM_SOUL_LANTERN = BLOCKS.register("platinum_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+    public static final RegistryObject<Block> PLATINUM_SOUL_LANTERN = BLOCKS.register("platinum_soul_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1.0F)
             .lightLevel(lightLevelSoul)
             .noOcclusion()));
     public static final RegistryObject<Item> PLATINUM_SOUL_LANTERN_ITEM = fromBlock(PLATINUM_SOUL_LANTERN);

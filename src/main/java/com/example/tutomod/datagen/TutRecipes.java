@@ -31,23 +31,23 @@ public class TutRecipes extends RecipeProvider {
 
             //Smelt in furnace
             SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.PLATINUM_ORES_ITEM),
-                        Registration.PLATINUM_INGOT.get(), 1.0f, 100)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 200)
                     .unlockedBy("has_ore", has(Registration.PLATINUM_ORES_ITEM))
                     .save(consumer, "smelting_ore_platinum_ingot");
 
             SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.RAW_PLATINUM.get()),
-                        Registration.PLATINUM_INGOT.get(), 1.0f, 100)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 200)
                 .unlockedBy("has_chunk", has(Registration.RAW_PLATINUM.get()))
                 .save(consumer, "smelting_raw_platinum_ingot");
 
         //Smelt in Blast_Furnace
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(Registration.PLATINUM_ORES_ITEM),
-                        Registration.PLATINUM_INGOT.get(), 1.0f, 50)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 100)
                 .unlockedBy("has_ore", has(Registration.PLATINUM_ORES_ITEM))
                 .save(consumer, "blasting_ore_platinum_ingot");
 
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(Registration.RAW_PLATINUM.get()),
-                        Registration.PLATINUM_INGOT.get(), 1.0f, 50)
+                        Registration.PLATINUM_INGOT.get(), 1.0f, 100)
                 .unlockedBy("has_chunk", has(Registration.RAW_PLATINUM.get()))
                 .save(consumer, "blasting_raw_platinum_ingot");
 
@@ -71,14 +71,20 @@ public class TutRecipes extends RecipeProvider {
                 .save(consumer, "craft_platinum_ingot_from_platinum_nugget");
 
             //Platinum Ingot Craft from Platinum Block
-        ShapelessRecipeBuilder.shapeless(Registration.PLATINUM_INGOT.get(), 9)
-                .requires(Registration.PLATINUM_BLOCK.get())
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_INGOT.get(), 9)
+                .pattern("   ")
+                .pattern(" B ")
+                .pattern("   ")
+                .define('B', Registration.PLATINUM_BLOCK.get())
                 .group("tutomod")
-                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_BLOCK.get()))
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
                 .save(consumer, "craft_platinum_ingot_from_platinum_block");
-            //Platinum Nugget Craft from Platinum Ingot
-        ShapelessRecipeBuilder.shapeless(Registration.PLATINUM_NUGGET.get(), 9)
-                .requires(Registration.PLATINUM_INGOT.get())
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_NUGGET.get(), 9)
+                .pattern("   ")
+                .pattern(" N ")
+                .pattern("   ")
+                .define('N', Registration.PLATINUM_INGOT.get())
                 .group("tutomod")
                 .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PLATINUM_INGOT.get()))
                 .save(consumer, "craft_platinum_nugget_from_platinum_ingot");
@@ -252,10 +258,13 @@ public class TutRecipes extends RecipeProvider {
                 .save(consumer, "craft_raw_platinum_block_from_raw_platinum");
 
         //Platinum Ingot Craft from Platinum Block
-        ShapelessRecipeBuilder.shapeless(Registration.RAW_PLATINUM.get(), 9)
-                .requires(Registration.RAW_PLATINUM_BLOCK.get())
+        ShapedRecipeBuilder.shaped(Registration.RAW_PLATINUM.get(), 9)
+                .pattern("   ")
+                .pattern(" B ")
+                .pattern("   ")
+                .define('B', Registration.RAW_PLATINUM_BLOCK.get())
                 .group("tutomod")
-                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.RAW_PLATINUM_BLOCK.get()))
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Items.TORCH))
                 .save(consumer, "craft_raw_platinum_from_raw_platinum_block");
 
         ShapedRecipeBuilder.shaped(Registration.PLATINUM_LANTERN.get())
@@ -267,6 +276,16 @@ public class TutRecipes extends RecipeProvider {
                 .group("tutomod")
                 .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Items.TORCH))
                 .save(consumer, "craft_platinum_lantern");
+
+        ShapedRecipeBuilder.shaped(Registration.PLATINUM_SOUL_LANTERN.get())
+                .pattern("ppp")
+                .pattern("pSp")
+                .pattern("ppp")
+                .define('p', Registration.PLATINUM_NUGGET.get())
+                .define('S', Items.SOUL_TORCH)
+                .group("tutomod")
+                .unlockedBy("platinum", InventoryChangeTrigger.TriggerInstance.hasItems(Items.SOUL_TORCH))
+                .save(consumer, "craft_platinum_soul_lantern");
 
         ShapedRecipeBuilder.shaped(Registration.PLATINUM_CHAIN.get())
                 .pattern(" p ")

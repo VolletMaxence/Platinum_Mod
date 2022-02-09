@@ -9,7 +9,7 @@ import net.minecraftforge.common.Tags;
 import static net.minecraftforge.common.Tags.Blocks.NEEDS_GOLD_TOOL;
 
 public class ModTiers {
-    public static final ForgeTier PLATINUM = new ForgeTier(2 , 907, 0, 0, 15,
+    public static final ForgeTier PLATINUM = new ForgeTier(2 , 907, 6.0F, 0, 15,
             NEEDS_GOLD_TOOL, () -> Ingredient.of((ItemLike) Registration.PLATINUM_INGOT.get()));
 
 }

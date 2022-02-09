@@ -22,9 +22,9 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class OreType {
 
     public static final int OVERWORLD_VEINSIZE = 5;
-    public static final int OVERWORLD_AMOUNT = 3;
-    public static final int DEEPSLATE_VEINSIZE = 5;
-    public static final int DEEPSLATE_AMOUNT = 3;
+    public static final int OVERWORLD_AMOUNT = 5;
+    public static final int DEEPSLATE_VEINSIZE = 6;
+    public static final int DEEPSLATE_AMOUNT = 5;
 
     //public static final RuleTest IN_ENDSTONE = new TagMatchTest(Tags.Blocks.END_STONES);
 

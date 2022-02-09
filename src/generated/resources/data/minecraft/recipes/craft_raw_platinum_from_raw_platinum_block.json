@@ -1,11 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "group": "tutomod",
-  "ingredients": [
-    {
+  "pattern": [
+    "   ",
+    " B ",
+    "   "
+  ],
+  "key": {
+    "B": {
       "item": "tutomod:raw_platinum_block"
     }
-  ],
+  },
   "result": {
     "item": "tutomod:raw_platinum",
     "count": 9

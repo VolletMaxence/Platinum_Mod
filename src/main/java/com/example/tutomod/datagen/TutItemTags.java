@@ -38,10 +38,7 @@ public class TutItemTags extends ItemTagsProvider {
 
         tag(Registration.PLATINUM_ORES_ITEM)
                 .add(Registration.PLATINUM_ORE_ITEM.get())
-                .add(Registration.PLATINUM_ORE_DEEPSLATE_ITEM.get())
-                .add(Registration.PLATINUM_BLOCK_ITEM.get())
-                .add(Registration.PLATINUM_NUGGET.get())
-                .add(Registration.RAW_PLATINUM_BLOCK_ITEM.get());
+                .add(Registration.PLATINUM_ORE_DEEPSLATE_ITEM.get());
         tag(Registration.PLATINUM_TOOLS)
                 .add(Registration.PLATINUM_SWORD.get())
                 .add(Registration.PLATINUM_PICKAXE.get())
